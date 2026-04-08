@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,33 +9,33 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
-        
+
         body {
             font-family: 'Inter', sans-serif;
             scroll-behavior: smooth;
         }
-        
+
         .gradient-text {
             background: linear-gradient(135deg, #60A5FA 0%, #A78BFA 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
         }
-        
+
         .card-hover {
             transition: all 0.3s ease;
         }
-        
+
         .card-hover:hover {
             transform: translateY(-5px);
             box-shadow: 0 20px 40px rgba(96, 165, 250, 0.15);
         }
-        
+
         .metric-card {
             background: linear-gradient(135deg, rgba(59, 130, 246, 0.1) 0%, rgba(147, 51, 234, 0.1) 100%);
             border: 1px solid rgba(96, 165, 250, 0.2);
         }
-        
+
         .timeline-line {
             position: absolute;
             left: 20px;
@@ -84,8 +85,9 @@
         }
     </style>
 </head>
+
 <body class="bg-gray-950 text-gray-100">
-    
+
     <!-- Navigation with Flying Photo -->
     <nav class="fixed top-0 w-full bg-gray-950/90 backdrop-blur-md z-50 border-b border-gray-800">
         <div class="max-w-7xl mx-auto px-6 py-3">
@@ -93,30 +95,29 @@
                 <div class="flex items-center space-x-3">
                     <!-- Nav Photo (Hidden Initially, Flies In) -->
                     <div id="nav-photo-container" class="w-10 h-10 rounded-xl overflow-hidden hidden">
-                        <img src="AGC Prof-2.jpg" 
-                             alt="Gopi Chaitanya" 
-                             class="w-full h-full profile-img-base">
+                        <img src="AGC Prof-2.jpg" alt="Gopi Chaitanya" class="w-full h-full profile-img-base">
                     </div>
                     <a href="#" class="text-xl font-bold gradient-text">Gopi Chaitanya</a>
                 </div>
-                
+
                 <!-- Desktop Menu -->
                 <div class="hidden md:flex space-x-8 items-center">
                     <a href="#projects" class="hover:text-blue-400 transition">Projects</a>
                     <a href="#experience" class="hover:text-blue-400 transition">Experience</a>
                     <a href="#recognition" class="hover:text-blue-400 transition">Recognition</a>
                     <a href="#contact" class="hover:text-blue-400 transition">Contact</a>
-                    <a href="#contact" class="bg-blue-600 hover:bg-blue-700 px-5 py-2 rounded-lg font-medium transition">
+                    <a href="#contact"
+                        class="bg-blue-600 hover:bg-blue-700 px-5 py-2 rounded-lg font-medium transition">
                         Hire Me
                     </a>
                 </div>
-                
+
                 <!-- Mobile Hamburger Button -->
                 <button id="mobile-menu-btn" class="md:hidden text-gray-300 hover:text-white focus:outline-none">
                     <i class="fas fa-bars text-2xl"></i>
                 </button>
             </div>
-            
+
             <!-- Mobile Menu (Hidden by default) -->
             <div id="mobile-menu" class="hidden md:hidden mt-4 pb-4">
                 <div class="flex flex-col space-y-3">
@@ -124,7 +125,8 @@
                     <a href="#experience" class="hover:text-blue-400 transition py-2">Experience</a>
                     <a href="#recognition" class="hover:text-blue-400 transition py-2">Recognition</a>
                     <a href="#contact" class="hover:text-blue-400 transition py-2">Contact</a>
-                    <a href="#contact" class="bg-blue-600 hover:bg-blue-700 px-5 py-3 rounded-lg font-medium transition text-center">
+                    <a href="#contact"
+                        class="bg-blue-600 hover:bg-blue-700 px-5 py-3 rounded-lg font-medium transition text-center">
                         Hire Me
                     </a>
                 </div>
@@ -139,45 +141,48 @@
                 <!-- Left: Text Content -->
                 <div class="text-center md:text-left">
                     <div class="mb-6">
-                        <span class="bg-blue-900/30 text-blue-400 px-4 py-2 rounded-full text-sm font-medium border border-blue-800">
+                        <span
+                            class="bg-blue-900/30 text-blue-400 px-4 py-2 rounded-full text-sm font-medium border border-blue-800">
                             🚀 Open to Opportunities | 3 Months Notice
                         </span>
                     </div>
-                    
+
                     <h1 class="text-4xl md:text-6xl font-extrabold mb-6 leading-tight">
                         I build automation tools that turn<br>
                         <span class="gradient-text">30-day workflows into 5-minute scripts</span>
                     </h1>
-                    
+
                     <p class="text-lg md:text-xl text-gray-400 mb-8">
-                        2.5+ years delivering mission-critical Python automation for Indian Railways | 
+                        2.5+ years delivering mission-critical Python automation for Indian Railways |
                         500+ stations | 6+ proprietary tools | Director-recognized
                     </p>
-                    
+
                     <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start mb-12">
-                        <a href="#projects" class="bg-blue-600 hover:bg-blue-700 px-8 py-4 rounded-xl font-semibold text-lg transition">
+                        <a href="#projects"
+                            class="bg-blue-600 hover:bg-blue-700 px-8 py-4 rounded-xl font-semibold text-lg transition">
                             View My Work
                         </a>
-                        <a href="Gopi_Chaitanya_Railway Automation Engineer.pdf" download class="border border-gray-700 hover:border-gray-500 px-8 py-4 rounded-xl font-semibold text-lg transition">
+                        <a href="Gopi_Chaitanya_Railway Automation Engineer.pdf" download
+                            class="border border-gray-700 hover:border-gray-500 px-8 py-4 rounded-xl font-semibold text-lg transition">
                             Download Resume
                         </a>
                     </div>
                 </div>
-                
+
                 <!-- Right: Large Hero Photo (Rounded Square) -->
                 <div class="flex justify-center md:justify-end">
                     <div id="hero-photo" class="relative">
-                        <div class="w-64 h-64 md:w-80 md:h-80 rounded-2xl overflow-hidden border-4 border-blue-500/30 shadow-2xl shadow-blue-500/20">
-                            <img src="AGC Prof-2.jpg" 
-                                 alt="Gopi Chaitanya Alamanda" 
-                                 class="w-full h-full profile-img-base">
+                        <div
+                            class="w-64 h-64 md:w-80 md:h-80 rounded-2xl overflow-hidden border-4 border-blue-500/30 shadow-2xl shadow-blue-500/20">
+                            <img src="AGC Prof-2.jpg" alt="Gopi Chaitanya Alamanda"
+                                class="w-full h-full profile-img-base">
                         </div>
                         <!-- Decorative Ring -->
                         <div class="absolute inset-0 rounded-2xl border-2 border-blue-400/30 animate-pulse"></div>
                     </div>
                 </div>
             </div>
-            
+
             <!-- Metrics Bar -->
             <div class="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-4xl mx-auto mt-16">
                 <div class="metric-card p-6 rounded-2xl card-hover">
@@ -201,332 +206,371 @@
     </section>
 
     <!-- Projects Section -->
-<section id="projects" class="py-24 bg-gray-900">
-    <div class="max-w-7xl mx-auto px-6">
-        <div class="text-center mb-16">
-            <h2 class="text-4xl md:text-5xl font-bold mb-4">Projects That <span class="gradient-text">Deliver Impact</span></h2>
-            <p class="text-xl text-gray-400">Self-initiated automation tools solving real-world railway challenges</p>
+    <section id="projects" class="py-24 bg-gray-900">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold mb-4">Projects That <span class="gradient-text">Deliver
+                        Impact</span></h2>
+                <p class="text-xl text-gray-400">Self-initiated automation tools solving real-world railway challenges
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Project 1: ChronoTech -->
+                <div class="bg-gray-950 border border-gray-800 rounded-2xl p-6 card-hover">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-blue-600/20 rounded-lg flex items-center justify-center mr-4">
+                            <i class="fas fa-database text-blue-400 text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold">ChronoTech</h3>
+                    </div>
+                    <div class="space-y-3">
+                        <div>
+                            <span class="text-gray-500 text-sm">Problem:</span>
+                            <p class="text-gray-300">Manual Database Skeleton Prep: 15 mins per 4,096 Excel/CSV records
+                            </p>
+                        </div>
+                        <div>
+                            <span class="text-gray-500 text-sm">Solution:</span>
+                            <p class="text-gray-300">Python automation for Oracle database skeleton generation</p>
+                        </div>
+                        <div>
+                            <span class="text-gray-500 text-sm">Impact:</span>
+                            <p class="text-green-400 font-semibold">15 min → 2 min; earned transition to core
+                                engineering</p>
+                        </div>
+                        <div class="flex flex-wrap gap-2 pt-3">
+                            <span class="bg-gray-800 px-3 py-1 rounded-full text-xs">Python</span>
+                            <span class="bg-gray-800 px-3 py-1 rounded-full text-xs">Excel/CSV</span>
+                            <span class="bg-gray-800 px-3 py-1 rounded-full text-xs">Oracle</span>
+                        </div>
+                        <div class="flex gap-2 pt-4">
+                            <a href="Vid/Python Automates Data Pipeline.mp4" target="_blank"
+                                class="video-btn text-white px-4 py-2 rounded-lg text-sm font-medium flex items-center flex-1 justify-center">
+                                <i class="fas fa-film mr-2"></i> Watch 45s Explainer
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2: Fault Replacer -->
+                <div class="bg-gray-950 border border-gray-800 rounded-2xl p-6 card-hover">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-purple-600/20 rounded-lg flex items-center justify-center mr-4">
+                            <i class="fas fa-magic text-purple-400 text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold">Fault Replacer</h3>
+                    </div>
+                    <div class="space-y-3">
+                        <div>
+                            <span class="text-gray-500 text-sm">Problem:</span>
+                            <p class="text-gray-300">18 EDFCC projects needed alarm standardization—30 days manual</p>
+                        </div>
+                        <div>
+                            <span class="text-gray-500 text-sm">Solution:</span>
+                            <p class="text-gray-300">Python data processing with intelligent before/after mapping</p>
+                        </div>
+                        <div>
+                            <span class="text-gray-500 text-sm">Impact:</span>
+                            <p class="text-green-400 font-semibold">30 days → 5 minutes; 100% accuracy across 61
+                                stations</p>
+                        </div>
+                        <div class="flex flex-wrap gap-2 pt-3">
+                            <span class="bg-gray-800 px-3 py-1 rounded-full text-xs">Python</span>
+                            <span class="bg-gray-800 px-3 py-1 rounded-full text-xs">Oracle SQL</span>
+                            <span class="bg-gray-800 px-3 py-1 rounded-full text-xs">Data Processing</span>
+                        </div>
+                        <div class="flex gap-2 pt-4">
+                            <a href="https://youtube.com/watch?v=YOUR_FAULT_REPLACER_VIDEO_ID" target="_blank"
+                                class="video-btn text-white px-4 py-2 rounded-lg text-sm font-medium flex items-center flex-1 justify-center">
+                                <i class="fas fa-film mr-2"></i> Watch 45s Explainer
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3: ESPAU -->
+                <div class="bg-gray-950 border border-gray-800 rounded-2xl p-6 card-hover">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-green-600/20 rounded-lg flex items-center justify-center mr-4">
+                            <i class="fas fa-shield-alt text-green-400 text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold">ESPAU</h3>
+                    </div>
+                    <div class="space-y-3">
+                        <div>
+                            <span class="text-gray-500 text-sm">Problem:</span>
+                            <p class="text-gray-300">Manual SPAU testing: 90 mins/station; safety-critical alarm
+                                validation</p>
+                        </div>
+                        <div>
+                            <span class="text-gray-500 text-sm">Solution:</span>
+                            <p class="text-gray-300">Excel automation generating route-wise test cases for train
+                                movements</p>
+                        </div>
+                        <div>
+                            <span class="text-gray-500 text-sm">Impact:</span>
+                            <p class="text-green-400 font-semibold">90 → 30 mins/station; 300 stations; zero safety
+                                incidents</p>
+                        </div>
+                        <div class="flex flex-wrap gap-2 pt-3">
+                            <span class="bg-gray-800 px-3 py-1 rounded-full text-xs">Python</span>
+                            <span class="bg-gray-800 px-3 py-1 rounded-full text-xs">Excel Automation</span>
+                            <span class="bg-gray-800 px-3 py-1 rounded-full text-xs">Safety-Critical</span>
+                        </div>
+                        <div class="flex gap-2 pt-4">
+                            <a href="https://youtube.com/watch?v=YOUR_ESPAU_VIDEO_ID" target="_blank"
+                                class="video-btn text-white px-4 py-2 rounded-lg text-sm font-medium flex items-center flex-1 justify-center">
+                                <i class="fas fa-film mr-2"></i> Watch 45s Explainer
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 5: JSON Processor -->
+                <div class="bg-gray-950 border border-gray-800 rounded-2xl p-6 card-hover">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-yellow-600/20 rounded-lg flex items-center justify-center mr-4">
+                            <i class="fas fa-code text-yellow-400 text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold">JSON Processor</h3>
+                    </div>
+                    <div class="space-y-3">
+                        <div>
+                            <span class="text-gray-500 text-sm">Problem:</span>
+                            <p class="text-gray-300">Nirdesh UI JSON configs required hours of manual edits <br><br></p>
+                        </div>
+                        <div>
+                            <span class="text-gray-500 text-sm">Solution:</span>
+                            <p class="text-gray-300">Python automation for asset colors, labels, directions, properties
+                            </p>
+                        </div>
+                        <div>
+                            <span class="text-gray-500 text-sm">Impact:</span>
+                            <p class="text-green-400 font-semibold">Hours → instant; zero visual errors</p>
+                        </div>
+                        <div class="flex flex-wrap gap-2 pt-3">
+                            <span class="bg-gray-800 px-3 py-1 rounded-full text-xs">Python</span>
+                            <span class="bg-gray-800 px-3 py-1 rounded-full text-xs">JSON</span>
+                            <span class="bg-gray-800 px-3 py-1 rounded-full text-xs">UI Automation</span>
+                        </div>
+                        <div class="flex gap-2 pt-4">
+                            <a href="https://youtube.com/watch?v=YOUR_JSON_PROCESSOR_VIDEO_ID" target="_blank"
+                                class="video-btn text-white px-4 py-2 rounded-lg text-sm font-medium flex items-center flex-1 justify-center">
+                                <i class="fas fa-film mr-2"></i> Watch 45s Explainer
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- NEW Project 8: Auto Alerts Reporter -->
+                <div class="bg-gray-950 border border-gray-800 rounded-2xl p-6 card-hover">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-orange-600/20 rounded-lg flex items-center justify-center mr-4">
+                            <i class="fas fa-bell text-orange-400 text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold">Auto Alerts Reporter</h3>
+                    </div>
+                    <div class="space-y-3">
+                        <div>
+                            <span class="text-gray-500 text-sm">Problem:</span>
+                            <p class="text-gray-300">No visibility into pending Nirdesh alerts across 145 stations</p>
+                        </div>
+                        <div>
+                            <span class="text-gray-500 text-sm">Solution:</span>
+                            <p class="text-gray-300">Real-time file scanner summarizing pending configs per station</p>
+                        </div>
+                        <div>
+                            <span class="text-gray-500 text-sm">Impact:</span>
+                            <p class="text-green-400 font-semibold">Data-driven planning for Jaipur + Allahabad
+                                divisions</p>
+                        </div>
+                        <div class="flex flex-wrap gap-2 pt-3">
+                            <span class="bg-gray-800 px-3 py-1 rounded-full text-xs">Python</span>
+                            <span class="bg-gray-800 px-3 py-1 rounded-full text-xs">File Automation</span>
+                            <span class="bg-gray-800 px-3 py-1 rounded-full text-xs">TCP/IP</span>
+                        </div>
+                        <div class="flex gap-2 pt-4">
+                            <a href="https://youtube.com/watch?v=YOUR_ALERTS_REPORTER_VIDEO_ID" target="_blank"
+                                class="video-btn text-white px-4 py-2 rounded-lg text-sm font-medium flex items-center flex-1 justify-center">
+                                <i class="fas fa-film mr-2"></i> Watch 45s Explainer
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- NEW Project 9: Automation Suite -->
+                <div class="bg-gray-950 border border-gray-800 rounded-2xl p-6 card-hover">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-pink-600/20 rounded-lg flex items-center justify-center mr-4">
+                            <i class="fas fa-tools text-pink-400 text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold">Automation Suite</h3>
+                    </div>
+                    <div class="space-y-3">
+                        <div>
+                            <span class="text-gray-500 text-sm">Problem:</span>
+                            <p class="text-gray-300">Manual errors in Oracle user provisioning, file collection, UI
+                                config workflows</p>
+                        </div>
+                        <div>
+                            <span class="text-gray-500 text-sm">Solution:</span>
+                            <p class="text-gray-300">3-tool suite: Auto Dump Creator, Auto File Collector, UI Color
+                                Configurator</p>
+                        </div>
+                        <div>
+                            <span class="text-gray-500 text-sm">Impact:</span>
+                            <p class="text-green-400 font-semibold">Eliminated manual errors across department workflows
+                            </p>
+                        </div>
+                        <div class="flex flex-wrap gap-2 pt-3">
+                            <span class="bg-gray-800 px-3 py-1 rounded-full text-xs">Python</span>
+                            <span class="bg-gray-800 px-3 py-1 rounded-full text-xs">Oracle</span>
+                            <span class="bg-gray-800 px-3 py-1 rounded-full text-xs">Workflow Automation</span>
+                        </div>
+                        <div class="flex gap-2 pt-4">
+                            <a href="https://youtube.com/watch?v=YOUR_AUTOMATION_SUITE_VIDEO_ID" target="_blank"
+                                class="video-btn text-white px-4 py-2 rounded-lg text-sm font-medium flex items-center flex-1 justify-center">
+                                <i class="fas fa-film mr-2"></i> Watch 45s Explainer
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        
-        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <!-- Project 1: ChronoTech -->
-            <div class="bg-gray-950 border border-gray-800 rounded-2xl p-6 card-hover">
-                <div class="flex items-center mb-4">
-                    <div class="w-12 h-12 bg-blue-600/20 rounded-lg flex items-center justify-center mr-4">
-                        <i class="fas fa-database text-blue-400 text-xl"></i>
-                    </div>
-                    <h3 class="text-xl font-bold">ChronoTech</h3>
-                </div>
-                <div class="space-y-3">
-                    <div>
-                        <span class="text-gray-500 text-sm">Problem:</span>
-                        <p class="text-gray-300">Manual Database Skeleton Prep: 15 mins per 4,096 Excel/CSV records</p>
-                    </div>
-                    <div>
-                        <span class="text-gray-500 text-sm">Solution:</span>
-                        <p class="text-gray-300">Python automation for Oracle database skeleton generation</p>
-                    </div>
-                    <div>
-                        <span class="text-gray-500 text-sm">Impact:</span>
-                        <p class="text-green-400 font-semibold">15 min → 2 min; earned transition to core engineering</p>
-                    </div>
-                    <div class="flex flex-wrap gap-2 pt-3">
-                        <span class="bg-gray-800 px-3 py-1 rounded-full text-xs">Python</span>
-                        <span class="bg-gray-800 px-3 py-1 rounded-full text-xs">Excel/CSV</span>
-                        <span class="bg-gray-800 px-3 py-1 rounded-full text-xs">Oracle</span>
-                    </div>
-                    <div class="flex gap-2 pt-4">
-                        <a href="Vid/Python Automates Data Pipeline.mp4" target="_blank" 
-                           class="video-btn text-white px-4 py-2 rounded-lg text-sm font-medium flex items-center flex-1 justify-center">
-                            <i class="fas fa-film mr-2"></i> Watch 45s Explainer
-                        </a>
-                    </div>
-                </div>
-            </div>
+    </section>
 
-            <!-- Project 2: Fault Replacer -->
-            <div class="bg-gray-950 border border-gray-800 rounded-2xl p-6 card-hover">
-                <div class="flex items-center mb-4">
-                    <div class="w-12 h-12 bg-purple-600/20 rounded-lg flex items-center justify-center mr-4">
-                        <i class="fas fa-magic text-purple-400 text-xl"></i>
-                    </div>
-                    <h3 class="text-xl font-bold">Fault Replacer</h3>
-                </div>
-                <div class="space-y-3">
-                    <div>
-                        <span class="text-gray-500 text-sm">Problem:</span>
-                        <p class="text-gray-300">18 EDFCC projects needed alarm standardization—30 days manual</p>
-                    </div>
-                    <div>
-                        <span class="text-gray-500 text-sm">Solution:</span>
-                        <p class="text-gray-300">Python data processing with intelligent before/after mapping</p>
-                    </div>
-                    <div>
-                        <span class="text-gray-500 text-sm">Impact:</span>
-                        <p class="text-green-400 font-semibold">30 days → 5 minutes; 100% accuracy across 61 stations</p>
-                    </div>
-                    <div class="flex flex-wrap gap-2 pt-3">
-                        <span class="bg-gray-800 px-3 py-1 rounded-full text-xs">Python</span>
-                        <span class="bg-gray-800 px-3 py-1 rounded-full text-xs">Oracle SQL</span>
-                        <span class="bg-gray-800 px-3 py-1 rounded-full text-xs">Data Processing</span>
-                    </div>
-                    <div class="flex gap-2 pt-4">
-                        <a href="https://youtube.com/watch?v=YOUR_FAULT_REPLACER_VIDEO_ID" target="_blank" 
-                           class="video-btn text-white px-4 py-2 rounded-lg text-sm font-medium flex items-center flex-1 justify-center">
-                            <i class="fas fa-film mr-2"></i> Watch 45s Explainer
-                        </a>
-                    </div>
-                </div>
+    <section id="projects-rly" class="py-10 bg-gray-900">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold mb-4"><span class="gradient-text">Railway Systems at </span>
+                    Scale</h2>
+                <p class="text-xl text-gray-400">Team-built platforms delivering real-time monitoring and predictive
+                    insights across 500+ stations.
+                </p>
             </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
 
-            <!-- Project 3: ESPAU -->
-            <div class="bg-gray-950 border border-gray-800 rounded-2xl p-6 card-hover">
-                <div class="flex items-center mb-4">
-                    <div class="w-12 h-12 bg-green-600/20 rounded-lg flex items-center justify-center mr-4">
-                        <i class="fas fa-shield-alt text-green-400 text-xl"></i>
+                <!-- Project 4: Video Wall Simulation -->
+                <div class="bg-gray-950 border border-gray-800 rounded-2xl p-6 card-hover">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-red-600/20 rounded-lg flex items-center justify-center mr-4">
+                            <i class="fas fa-desktop text-red-400 text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold">TMS - Train Monitoring System</h3>
                     </div>
-                    <h3 class="text-xl font-bold">ESPAU</h3>
+                    <div class="space-y-3">
+                        <div>
+                            <span class="text-gray-500 text-sm">Problem:</span>
+                            <p class="text-gray-300">Real-time visualization needed for 101 stations on single video
+                                wall <br> <br>
+                            </p>
+                        </div>
+                        <div>
+                            <span class="text-gray-500 text-sm">Solution:</span>
+                            <p class="text-gray-300">Integrated live signalling, train tracking, gates, points on
+                                multi-screen display</p>
+                        </div>
+                        <div>
+                            <span class="text-gray-500 text-sm">Impact:</span>
+                            <p class="text-green-400 font-semibold">India's largest (101 stations); 36-hour deployment
+                            </p>
+                        </div>
+                        <div class="flex flex-wrap gap-2 pt-3">
+                            <span class="bg-gray-800 px-3 py-1 rounded-full text-xs">System Integration</span>
+                            <span class="bg-gray-800 px-3 py-1 rounded-full text-xs">Real-Time</span>
+                            <span class="bg-gray-800 px-3 py-1 rounded-full text-xs">Video Wall</span>
+                        </div>
+                        <div class="flex gap-2 pt-4">
+                            <a href="https://youtube.com/watch?v=YOUR_VIDEO_WALL_VIDEO_ID" target="_blank"
+                                class="video-btn text-white px-4 py-2 rounded-lg text-sm font-medium flex items-center flex-1 justify-center">
+                                <i class="fas fa-film mr-2"></i> Watch 45s Explainer
+                            </a>
+                        </div>
+                    </div>
                 </div>
-                <div class="space-y-3">
-                    <div>
-                        <span class="text-gray-500 text-sm">Problem:</span>
-                        <p class="text-gray-300">Manual SPAU testing: 90 mins/station; safety-critical alarm validation</p>
+
+                <!-- Project 6: RDPM -->
+                <div class="bg-gray-950 border border-gray-800 rounded-2xl p-6 card-hover">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-cyan-600/20 rounded-lg flex items-center justify-center mr-4">
+                            <i class="fas fa-cloud text-cyan-400 text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold">RDPM - Remote Diagnostic and Preventive Maintenance</h3>
                     </div>
-                    <div>
-                        <span class="text-gray-500 text-sm">Solution:</span>
-                        <p class="text-gray-300">Excel automation generating route-wise test cases for train movements</p>
-                    </div>
-                    <div>
-                        <span class="text-gray-500 text-sm">Impact:</span>
-                        <p class="text-green-400 font-semibold">90 → 30 mins/station; 300 stations; zero safety incidents</p>
-                    </div>
-                    <div class="flex flex-wrap gap-2 pt-3">
-                        <span class="bg-gray-800 px-3 py-1 rounded-full text-xs">Python</span>
-                        <span class="bg-gray-800 px-3 py-1 rounded-full text-xs">Excel Automation</span>
-                        <span class="bg-gray-800 px-3 py-1 rounded-full text-xs">Safety-Critical</span>
-                    </div>
-                    <div class="flex gap-2 pt-4">
-                        <a href="https://youtube.com/watch?v=YOUR_ESPAU_VIDEO_ID" target="_blank" 
-                           class="video-btn text-white px-4 py-2 rounded-lg text-sm font-medium flex items-center flex-1 justify-center">
-                            <i class="fas fa-film mr-2"></i> Watch 45s Explainer
-                        </a>
+                    <div class="space-y-3">
+                        <div>
+                            <span class="text-gray-500 text-sm">Problem:</span>
+                            <p class="text-gray-300">Reactive monitoring of battery, signal current, track circuit,
+                                Point circuit health <br> <br>
+                            </p>
+                        </div>
+                        <div>
+                            <span class="text-gray-500 text-sm">Solution:</span>
+                            <p class="text-gray-300">Azure VM-based digital twin with real-time analog and digital value
+                                monitoring
+                            </p>
+                        </div>
+                        <div>
+                            <span class="text-gray-500 text-sm">Impact:</span>
+                            <p class="text-green-400 font-semibold">10 stations; preventive maintenance; zero downtime
+                            </p>
+                        </div>
+                        <div class="flex flex-wrap gap-2 pt-3">
+                            <span class="bg-gray-800 px-3 py-1 rounded-full text-xs">Azure VM</span>
+                            <span class="bg-gray-800 px-3 py-1 rounded-full text-xs">IoT Monitoring</span>
+                            <span class="bg-gray-800 px-3 py-1 rounded-full text-xs">Digital Twin</span>
+                        </div>
+                        <div class="flex gap-2 pt-4">
+                            <a href="https://youtube.com/watch?v=YOUR_RDPM_VIDEO_ID" target="_blank"
+                                class="video-btn text-white px-4 py-2 rounded-lg text-sm font-medium flex items-center flex-1 justify-center">
+                                <i class="fas fa-film mr-2"></i> Watch 45s Explainer
+                            </a>
+                        </div>
                     </div>
                 </div>
+
+                <!-- NEW Project 7: Train Tracking Analysis (ATTS) -->
+                <div class="bg-gray-950 border border-gray-800 rounded-2xl p-6 card-hover">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-indigo-600/20 rounded-lg flex items-center justify-center mr-4">
+                            <i class="fas fa-train text-indigo-400 text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold">Train Tracking Analysis (ATTS)</h3>
+                    </div>
+                    <div class="space-y-3">
+                        <div>
+                            <span class="text-gray-500 text-sm">Problem:</span>
+                            <p class="text-gray-300">Thousands of train tracking records with undetected breaks in NCR
+                                Jhansi</p>
+                        </div>
+                        <div>
+                            <span class="text-gray-500 text-sm">Solution:</span>
+                            <p class="text-gray-300">Advanced 30-line Oracle SQL queries (multi-table joins, CASE logic)
+                                with CRIS collaboration</p>
+                        </div>
+                        <div>
+                            <span class="text-gray-500 text-sm">Impact:</span>
+                            <p class="text-green-400 font-semibold">Identified failure patterns; upgraded ATTS tracking
+                                algorithms</p>
+                        </div>
+                        <div class="flex flex-wrap gap-2 pt-3">
+                            <span class="bg-gray-800 px-3 py-1 rounded-full text-xs">Oracle SQL</span>
+                            <span class="bg-gray-800 px-3 py-1 rounded-full text-xs">Data Analysis</span>
+                            <span class="bg-gray-800 px-3 py-1 rounded-full text-xs">CRIS</span>
+                        </div>
+                        <div class="flex gap-2 pt-4">
+                            <a href="https://youtube.com/watch?v=YOUR_ATTS_VIDEO_ID" target="_blank"
+                                class="video-btn text-white px-4 py-2 rounded-lg text-sm font-medium flex items-center flex-1 justify-center">
+                                <i class="fas fa-film mr-2"></i> Watch 45s Explainer
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
             </div>
-
-            <!-- Project 4: Video Wall Simulation -->
-            <div class="bg-gray-950 border border-gray-800 rounded-2xl p-6 card-hover">
-                <div class="flex items-center mb-4">
-                    <div class="w-12 h-12 bg-red-600/20 rounded-lg flex items-center justify-center mr-4">
-                        <i class="fas fa-desktop text-red-400 text-xl"></i>
-                    </div>
-                    <h3 class="text-xl font-bold">Video Wall Simulation</h3>
-                </div>
-                <div class="space-y-3">
-                    <div>
-                        <span class="text-gray-500 text-sm">Problem:</span>
-                        <p class="text-gray-300">Real-time visualization needed for 101 stations on single video wall</p>
-                    </div>
-                    <div>
-                        <span class="text-gray-500 text-sm">Solution:</span>
-                        <p class="text-gray-300">Integrated live signalling, train tracking, gates, points on multi-screen display</p>
-                    </div>
-                    <div>
-                        <span class="text-gray-500 text-sm">Impact:</span>
-                        <p class="text-green-400 font-semibold">India's largest (101 stations); 36-hour deployment</p>
-                    </div>
-                    <div class="flex flex-wrap gap-2 pt-3">
-                        <span class="bg-gray-800 px-3 py-1 rounded-full text-xs">System Integration</span>
-                        <span class="bg-gray-800 px-3 py-1 rounded-full text-xs">Real-Time</span>
-                        <span class="bg-gray-800 px-3 py-1 rounded-full text-xs">Video Wall</span>
-                    </div>
-                    <div class="flex gap-2 pt-4">
-                        <a href="https://youtube.com/watch?v=YOUR_VIDEO_WALL_VIDEO_ID" target="_blank" 
-                           class="video-btn text-white px-4 py-2 rounded-lg text-sm font-medium flex items-center flex-1 justify-center">
-                            <i class="fas fa-film mr-2"></i> Watch 45s Explainer
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Project 5: JSON Processor -->
-            <div class="bg-gray-950 border border-gray-800 rounded-2xl p-6 card-hover">
-                <div class="flex items-center mb-4">
-                    <div class="w-12 h-12 bg-yellow-600/20 rounded-lg flex items-center justify-center mr-4">
-                        <i class="fas fa-code text-yellow-400 text-xl"></i>
-                    </div>
-                    <h3 class="text-xl font-bold">JSON Processor</h3>
-                </div>
-                <div class="space-y-3">
-                    <div>
-                        <span class="text-gray-500 text-sm">Problem:</span>
-                        <p class="text-gray-300">Nirdesh UI JSON configs required hours of manual edits</p>
-                    </div>
-                    <div>
-                        <span class="text-gray-500 text-sm">Solution:</span>
-                        <p class="text-gray-300">Python automation for asset colors, labels, directions, properties</p>
-                    </div>
-                    <div>
-                        <span class="text-gray-500 text-sm">Impact:</span>
-                        <p class="text-green-400 font-semibold">Hours → instant; zero visual errors</p>
-                    </div>
-                    <div class="flex flex-wrap gap-2 pt-3">
-                        <span class="bg-gray-800 px-3 py-1 rounded-full text-xs">Python</span>
-                        <span class="bg-gray-800 px-3 py-1 rounded-full text-xs">JSON</span>
-                        <span class="bg-gray-800 px-3 py-1 rounded-full text-xs">UI Automation</span>
-                    </div>
-                    <div class="flex gap-2 pt-4">
-                        <a href="https://youtube.com/watch?v=YOUR_JSON_PROCESSOR_VIDEO_ID" target="_blank" 
-                           class="video-btn text-white px-4 py-2 rounded-lg text-sm font-medium flex items-center flex-1 justify-center">
-                            <i class="fas fa-film mr-2"></i> Watch 45s Explainer
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Project 6: RDPM -->
-            <div class="bg-gray-950 border border-gray-800 rounded-2xl p-6 card-hover">
-                <div class="flex items-center mb-4">
-                    <div class="w-12 h-12 bg-cyan-600/20 rounded-lg flex items-center justify-center mr-4">
-                        <i class="fas fa-cloud text-cyan-400 text-xl"></i>
-                    </div>
-                    <h3 class="text-xl font-bold">RDPM</h3>
-                </div>
-                <div class="space-y-3">
-                    <div>
-                        <span class="text-gray-500 text-sm">Problem:</span>
-                        <p class="text-gray-300">Reactive monitoring of battery, signal current, track circuit health</p>
-                    </div>
-                    <div>
-                        <span class="text-gray-500 text-sm">Solution:</span>
-                        <p class="text-gray-300">Azure VM-based digital twin with real-time analog value monitoring</p>
-                    </div>
-                    <div>
-                        <span class="text-gray-500 text-sm">Impact:</span>
-                        <p class="text-green-400 font-semibold">10 stations; preventive maintenance; zero downtime</p>
-                    </div>
-                    <div class="flex flex-wrap gap-2 pt-3">
-                        <span class="bg-gray-800 px-3 py-1 rounded-full text-xs">Azure VM</span>
-                        <span class="bg-gray-800 px-3 py-1 rounded-full text-xs">IoT Monitoring</span>
-                        <span class="bg-gray-800 px-3 py-1 rounded-full text-xs">Digital Twin</span>
-                    </div>
-                    <div class="flex gap-2 pt-4">
-                        <a href="https://youtube.com/watch?v=YOUR_RDPM_VIDEO_ID" target="_blank" 
-                           class="video-btn text-white px-4 py-2 rounded-lg text-sm font-medium flex items-center flex-1 justify-center">
-                            <i class="fas fa-film mr-2"></i> Watch 45s Explainer
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- NEW Project 7: Train Tracking Analysis (ATTS) -->
-            <div class="bg-gray-950 border border-gray-800 rounded-2xl p-6 card-hover">
-                <div class="flex items-center mb-4">
-                    <div class="w-12 h-12 bg-indigo-600/20 rounded-lg flex items-center justify-center mr-4">
-                        <i class="fas fa-train text-indigo-400 text-xl"></i>
-                    </div>
-                    <h3 class="text-xl font-bold">Train Tracking Analysis (ATTS)</h3>
-                </div>
-                <div class="space-y-3">
-                    <div>
-                        <span class="text-gray-500 text-sm">Problem:</span>
-                        <p class="text-gray-300">Thousands of train tracking records with undetected breaks in NCR Jhansi</p>
-                    </div>
-                    <div>
-                        <span class="text-gray-500 text-sm">Solution:</span>
-                        <p class="text-gray-300">Advanced 30-line Oracle SQL queries (multi-table joins, CASE logic) with CRIS collaboration</p>
-                    </div>
-                    <div>
-                        <span class="text-gray-500 text-sm">Impact:</span>
-                        <p class="text-green-400 font-semibold">Identified failure patterns; upgraded ATTS tracking algorithms</p>
-                    </div>
-                    <div class="flex flex-wrap gap-2 pt-3">
-                        <span class="bg-gray-800 px-3 py-1 rounded-full text-xs">Oracle SQL</span>
-                        <span class="bg-gray-800 px-3 py-1 rounded-full text-xs">Data Analysis</span>
-                        <span class="bg-gray-800 px-3 py-1 rounded-full text-xs">CRIS</span>
-                    </div>
-                    <div class="flex gap-2 pt-4">
-                        <a href="https://youtube.com/watch?v=YOUR_ATTS_VIDEO_ID" target="_blank" 
-                           class="video-btn text-white px-4 py-2 rounded-lg text-sm font-medium flex items-center flex-1 justify-center">
-                            <i class="fas fa-film mr-2"></i> Watch 45s Explainer
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- NEW Project 8: Auto Alerts Reporter -->
-            <div class="bg-gray-950 border border-gray-800 rounded-2xl p-6 card-hover">
-                <div class="flex items-center mb-4">
-                    <div class="w-12 h-12 bg-orange-600/20 rounded-lg flex items-center justify-center mr-4">
-                        <i class="fas fa-bell text-orange-400 text-xl"></i>
-                    </div>
-                    <h3 class="text-xl font-bold">Auto Alerts Reporter</h3>
-                </div>
-                <div class="space-y-3">
-                    <div>
-                        <span class="text-gray-500 text-sm">Problem:</span>
-                        <p class="text-gray-300">No visibility into pending Nirdesh alerts across 145 stations</p>
-                    </div>
-                    <div>
-                        <span class="text-gray-500 text-sm">Solution:</span>
-                        <p class="text-gray-300">Real-time file scanner summarizing pending configs per station</p>
-                    </div>
-                    <div>
-                        <span class="text-gray-500 text-sm">Impact:</span>
-                        <p class="text-green-400 font-semibold">Data-driven planning for Jaipur + Allahabad divisions</p>
-                    </div>
-                    <div class="flex flex-wrap gap-2 pt-3">
-                        <span class="bg-gray-800 px-3 py-1 rounded-full text-xs">Python</span>
-                        <span class="bg-gray-800 px-3 py-1 rounded-full text-xs">File Automation</span>
-                        <span class="bg-gray-800 px-3 py-1 rounded-full text-xs">TCP/IP</span>
-                    </div>
-                    <div class="flex gap-2 pt-4">
-                        <a href="https://youtube.com/watch?v=YOUR_ALERTS_REPORTER_VIDEO_ID" target="_blank" 
-                           class="video-btn text-white px-4 py-2 rounded-lg text-sm font-medium flex items-center flex-1 justify-center">
-                            <i class="fas fa-film mr-2"></i> Watch 45s Explainer
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- NEW Project 9: Automation Suite -->
-            <div class="bg-gray-950 border border-gray-800 rounded-2xl p-6 card-hover">
-                <div class="flex items-center mb-4">
-                    <div class="w-12 h-12 bg-pink-600/20 rounded-lg flex items-center justify-center mr-4">
-                        <i class="fas fa-tools text-pink-400 text-xl"></i>
-                    </div>
-                    <h3 class="text-xl font-bold">Automation Suite</h3>
-                </div>
-                <div class="space-y-3">
-                    <div>
-                        <span class="text-gray-500 text-sm">Problem:</span>
-                        <p class="text-gray-300">Manual errors in Oracle user provisioning, file collection, UI config workflows</p>
-                    </div>
-                    <div>
-                        <span class="text-gray-500 text-sm">Solution:</span>
-                        <p class="text-gray-300">3-tool suite: Auto Dump Creator, Auto File Collector, UI Color Configurator</p>
-                    </div>
-                    <div>
-                        <span class="text-gray-500 text-sm">Impact:</span>
-                        <p class="text-green-400 font-semibold">Eliminated manual errors across department workflows</p>
-                    </div>
-                    <div class="flex flex-wrap gap-2 pt-3">
-                        <span class="bg-gray-800 px-3 py-1 rounded-full text-xs">Python</span>
-                        <span class="bg-gray-800 px-3 py-1 rounded-full text-xs">Oracle</span>
-                        <span class="bg-gray-800 px-3 py-1 rounded-full text-xs">Workflow Automation</span>
-                    </div>
-                    <div class="flex gap-2 pt-4">
-                        <a href="https://youtube.com/watch?v=YOUR_AUTOMATION_SUITE_VIDEO_ID" target="_blank" 
-                           class="video-btn text-white px-4 py-2 rounded-lg text-sm font-medium flex items-center flex-1 justify-center">
-                            <i class="fas fa-film mr-2"></i> Watch 45s Explainer
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-    </div>
-</section>
+    </section>
 
     <!-- Experience Timeline -->
     <section id="experience" class="py-24">
@@ -535,12 +579,13 @@
                 <h2 class="text-4xl md:text-5xl font-bold mb-4">Career <span class="gradient-text">Journey</span></h2>
                 <p class="text-xl text-gray-400">From Trainee to Engineer leading pan-India projects</p>
             </div>
-            
+
             <div class="relative">
                 <div class="timeline-line"></div>
-                
+
                 <div class="relative pl-12 pb-12">
-                    <div class="absolute left-0 w-10 h-10 bg-blue-600 rounded-full flex items-center justify-center border-4 border-gray-950">
+                    <div
+                        class="absolute left-0 w-10 h-10 bg-blue-600 rounded-full flex items-center justify-center border-4 border-gray-950">
                         <span class="text-white font-bold text-sm">1</span>
                     </div>
                     <div class="bg-gray-900 border border-gray-800 rounded-xl p-6">
@@ -549,48 +594,57 @@
                         <p class="text-gray-400">Started with 3-month training; assigned to site deployment</p>
                     </div>
                 </div>
-                
+
                 <div class="relative pl-12 pb-12">
-                    <div class="absolute left-0 w-10 h-10 bg-purple-600 rounded-full flex items-center justify-center border-4 border-gray-950">
+                    <div
+                        class="absolute left-0 w-10 h-10 bg-purple-600 rounded-full flex items-center justify-center border-4 border-gray-950">
                         <span class="text-white font-bold text-sm">2</span>
                     </div>
                     <div class="bg-gray-900 border border-gray-800 rounded-xl p-6">
                         <div class="text-purple-400 text-sm font-semibold mb-2">Jul 2023</div>
-                        <h3 class="text-xl font-bold mb-2">Built ChronoTech in 7 Days</h3>
-                        <p class="text-gray-400">Automated Database Skeleton; moved to office as Technical Support Engineer</p>
+                        <h3 class="text-xl font-bold mb-2">Built ChronoTech in 10 Days</h3>
+                        <p class="text-gray-400">Automated Database Skeleton; moved to office as Technical Support
+                            Engineer</p>
                     </div>
                 </div>
-                
+
                 <div class="relative pl-12 pb-12">
-                    <div class="absolute left-0 w-10 h-10 bg-green-600 rounded-full flex items-center justify-center border-4 border-gray-950">
+                    <div
+                        class="absolute left-0 w-10 h-10 bg-green-600 rounded-full flex items-center justify-center border-4 border-gray-950">
                         <span class="text-white font-bold text-sm">3</span>
                     </div>
                     <div class="bg-gray-900 border border-gray-800 rounded-xl p-6">
-                        <div class="text-green-400 text-sm font-semibold mb-2">Sep 2023</div>
+                        <div class="text-green-400 text-sm font-semibold mb-2">Sep - Dec 2023</div>
                         <h3 class="text-xl font-bold mb-2">Confirmed as Engineer</h3>
-                        <p class="text-gray-400">Represented company at IREE Delhi; led Video Wall for Jhansi</p>
+                        <p class="text-gray-400">Represented company at IREE & IRSE Delhi; led Video Wall for Jhansi</p>
                     </div>
                 </div>
-                
+
                 <div class="relative pl-12 pb-12">
-                    <div class="absolute left-0 w-10 h-10 bg-yellow-600 rounded-full flex items-center justify-center border-4 border-gray-950">
+                    <div
+                        class="absolute left-0 w-10 h-10 bg-yellow-600 rounded-full flex items-center justify-center border-4 border-gray-950">
                         <span class="text-white font-bold text-sm">4</span>
                     </div>
                     <div class="bg-gray-900 border border-gray-800 rounded-xl p-6">
-                        <div class="text-yellow-400 text-sm font-semibold mb-2">2024</div>
+                        <div class="text-yellow-400 text-sm font-semibold mb-2">2024 - 2025</div>
                         <h3 class="text-xl font-bold mb-2">Led Pan-India Projects</h3>
-                        <p class="text-gray-400">Nirdesh (145 stations), SPAU (300 stations), India's Largest Video Wall (101 stations)</p>
+                        <p class="text-gray-400">Nirdesh Alerts (145 stations), SPAU (300 stations), RDPM (10 stations),
+                            Video Walls (300+ Stations), India's Largest Video Wall
+                            (116 stations) inaugurated by Railway Minister</p>
                     </div>
                 </div>
-                
+
                 <div class="relative pl-12">
-                    <div class="absolute left-0 w-10 h-10 bg-red-600 rounded-full flex items-center justify-center border-4 border-gray-950">
+                    <div
+                        class="absolute left-0 w-10 h-10 bg-red-600 rounded-full flex items-center justify-center border-4 border-gray-950">
                         <span class="text-white font-bold text-sm">5</span>
                     </div>
                     <div class="bg-gray-900 border border-gray-800 rounded-xl p-6">
-                        <div class="text-red-400 text-sm font-semibold mb-2">2025-Present</div>
+                        <div class="text-red-400 text-sm font-semibold mb-2">2026-Present</div>
                         <h3 class="text-xl font-bold mb-2">Leading JSG TMS</h3>
-                        <p class="text-gray-400">Multi-zone integration (41 stations); inaugurated by Railway Minister</p>
+                        <p class="text-gray-400">India's first Multi-zone [SER, SECR, ECoR] integration Train Monitoring
+                            System (41 stations)
+                        </p>
                     </div>
                 </div>
             </div>
@@ -601,23 +655,24 @@
     <section id="recognition" class="py-24 bg-gray-900">
         <div class="max-w-5xl mx-auto px-6">
             <div class="text-center mb-16">
-                <h2 class="text-4xl md:text-5xl font-bold mb-4">Recognition & <span class="gradient-text">Impact</span></h2>
+                <h2 class="text-4xl md:text-5xl font-bold mb-4">Recognition & <span class="gradient-text">Impact</span>
+                </h2>
                 <p class="text-xl text-gray-400">Validated by leadership and industry bodies</p>
             </div>
-            
+
             <div class="grid md:grid-cols-3 gap-6">
                 <div class="bg-gray-950 border border-gray-800 rounded-2xl p-6 text-center card-hover">
                     <div class="text-5xl mb-4">🏆</div>
                     <h3 class="text-xl font-bold mb-2">2 Email Appreciations</h3>
                     <p class="text-gray-400">From senior management for automation tools</p>
                 </div>
-                
+
                 <div class="bg-gray-950 border border-gray-800 rounded-2xl p-6 text-center card-hover">
                     <div class="text-5xl mb-4">🎤</div>
                     <h3 class="text-xl font-bold mb-2">Director Public Recognition</h3>
                     <p class="text-gray-400">Speech for exceptional productivity contributions</p>
                 </div>
-                
+
                 <div class="bg-gray-950 border border-gray-800 rounded-2xl p-6 text-center card-hover">
                     <div class="text-5xl mb-4">📍</div>
                     <h3 class="text-xl font-bold mb-2">RDSO & RITE Validation</h3>
@@ -631,38 +686,53 @@
     <section class="py-24">
         <div class="max-w-5xl mx-auto px-6">
             <div class="text-center mb-16">
-                <h2 class="text-4xl md:text-5xl font-bold mb-4">Technical <span class="gradient-text">Expertise</span></h2>
+                <h2 class="text-4xl md:text-5xl font-bold mb-4">Technical <span class="gradient-text">Expertise</span>
+                </h2>
             </div>
-            
+
             <div class="grid md:grid-cols-3 gap-8">
                 <div class="bg-gray-900 border border-gray-800 rounded-2xl p-6">
                     <h3 class="text-xl font-bold mb-4 text-blue-400">Expert Level</h3>
                     <div class="flex flex-wrap gap-2">
                         <span class="bg-blue-900/30 border border-blue-800 px-3 py-2 rounded-lg text-sm">Python</span>
-                        <span class="bg-blue-900/30 border border-blue-800 px-3 py-2 rounded-lg text-sm">Oracle SQL</span>
-                        <span class="bg-blue-900/30 border border-blue-800 px-3 py-2 rounded-lg text-sm">Excel Automation</span>
-                        <span class="bg-blue-900/30 border border-blue-800 px-3 py-2 rounded-lg text-sm">JSON Processing</span>
+                        <span class="bg-blue-900/30 border border-blue-800 px-3 py-2 rounded-lg text-sm">Oracle
+                            SQL</span>
+                        <span class="bg-blue-900/30 border border-blue-800 px-3 py-2 rounded-lg text-sm">Excel
+                            Automation</span>
+                        <span class="bg-blue-900/30 border border-blue-800 px-3 py-2 rounded-lg text-sm">JSON
+                            Processing</span>
                     </div>
                 </div>
-                
+
                 <div class="bg-gray-900 border border-gray-800 rounded-2xl p-6">
                     <h3 class="text-xl font-bold mb-4 text-purple-400">Advanced</h3>
                     <div class="flex flex-wrap gap-2">
-                        <span class="bg-purple-900/30 border border-purple-800 px-3 py-2 rounded-lg text-sm">Django</span>
-                        <span class="bg-purple-900/30 border border-purple-800 px-3 py-2 rounded-lg text-sm">Flask</span>
-                        <span class="bg-purple-900/30 border border-purple-800 px-3 py-2 rounded-lg text-sm">React JS</span>
-                        <span class="bg-purple-900/30 border border-purple-800 px-3 py-2 rounded-lg text-sm">Azure Cloud</span>
-                        <span class="bg-purple-900/30 border border-purple-800 px-3 py-2 rounded-lg text-sm">Power BI</span>
+                        <span
+                            class="bg-purple-900/30 border border-purple-800 px-3 py-2 rounded-lg text-sm">Django</span>
+                        <span
+                            class="bg-purple-900/30 border border-purple-800 px-3 py-2 rounded-lg text-sm">Flask</span>
+                        <span class="bg-purple-900/30 border border-purple-800 px-3 py-2 rounded-lg text-sm">React
+                            JS</span>
+                        <span class="bg-purple-900/30 border border-purple-800 px-3 py-2 rounded-lg text-sm">Azure
+                            Cloud</span>
+                        <span class="bg-purple-900/30 border border-purple-800 px-3 py-2 rounded-lg text-sm">Power
+                            BI</span>
                     </div>
                 </div>
-                
+
                 <div class="bg-gray-900 border border-gray-800 rounded-2xl p-6">
                     <h3 class="text-xl font-bold mb-4 text-green-400">Domain Knowledge</h3>
                     <div class="flex flex-wrap gap-2">
-                        <span class="bg-green-900/30 border border-green-800 px-3 py-2 rounded-lg text-sm">Railway Signalling (RDSO)</span>
-                        <span class="bg-green-900/30 border border-green-800 px-3 py-2 rounded-lg text-sm">Video Wall Simulation</span>
-                        <span class="bg-green-900/30 border border-green-800 px-3 py-2 rounded-lg text-sm">IoT Monitoring</span>
-                        <span class="bg-green-900/30 border border-green-800 px-3 py-2 rounded-lg text-sm">ATP Validation</span>
+                        <span class="bg-green-900/30 border border-green-800 px-3 py-2 rounded-lg text-sm">Railway
+                            Signalling</span>
+                        <span class="bg-green-900/30 border border-green-800 px-3 py-2 rounded-lg text-sm">SIP</span>
+                        <span class="bg-green-900/30 border border-green-800 px-3 py-2 rounded-lg text-sm">RCC</span>
+                        <span class="bg-green-900/30 border border-green-800 px-3 py-2 rounded-lg text-sm">System integrations</span>
+                        <span class="bg-green-900/30 border border-green-800 px-3 py-2 rounded-lg text-sm">IoT
+                            Monitoring</span>
+                        <span class="bg-green-900/30 border border-green-800 px-3 py-2 rounded-lg text-sm">ATP
+                            Validation</span>
+                        <span class="bg-green-900/30 border border-green-800 px-3 py-2 rounded-lg text-sm">TCP/IP</span>
                     </div>
                 </div>
             </div>
@@ -673,34 +743,34 @@
     <section id="contact" class="py-24 bg-gray-900">
         <div class="max-w-3xl mx-auto px-6 text-center">
             <h2 class="text-4xl md:text-5xl font-bold mb-4">Let's Build <span class="gradient-text">Together</span></h2>
-            <p class="text-xl text-gray-400 mb-8">Ready to automate your workflows and deliver 10x productivity gains</p>
-            
-            <div class="grid md:grid-cols-2 gap-4 mb-8">
-                <a href="mailto:gopichaitanyaalamanda4935@gmail.com" class="bg-gray-950 border border-gray-800 hover:border-blue-600 p-6 rounded-xl transition card-hover">
+            <p class="text-xl text-gray-400 mb-8">Ready to automate your workflows and deliver 10x productivity gains
+            </p>
+
+            <div class="grid md:grid-cols-1 gap-4 mb-8">
+                <a href="mailto:gopichaitanyaalamanda4935@gmail.com"
+                    class="bg-gray-950 border border-gray-800 hover:border-blue-600 p-6 rounded-xl transition card-hover">
                     <i class="fas fa-envelope text-blue-400 text-2xl mb-3"></i>
                     <div class="font-semibold">Email Me</div>
                     <div class="text-gray-400 text-sm">gopichaitanyaalamanda4935@gmail.com</div>
                 </a>
-                
-                <a href="tel:+919542230366" class="bg-gray-950 border border-gray-800 hover:border-green-600 p-6 rounded-xl transition card-hover">
-                    <i class="fas fa-phone text-green-400 text-2xl mb-3"></i>
-                    <div class="font-semibold">Call Me</div>
-                    <div class="text-gray-400 text-sm">+91 9542230366</div>
-                </a>
+
             </div>
-            
+
             <div class="flex flex-wrap justify-center gap-4 mb-8">
-                <a href="https://linkedin.com/in/agc" target="_blank" class="bg-blue-700 hover:bg-blue-800 px-6 py-3 rounded-lg font-medium transition">
+                <a href="https://linkedin.com/in/agc" target="_blank"
+                    class="bg-blue-700 hover:bg-blue-800 px-6 py-3 rounded-lg font-medium transition">
                     <i class="fab fa-linkedin mr-2"></i> LinkedIn
                 </a>
-                <a href="https://github.com/GopiChaitanyaAlamanda" target="_blank" class="bg-gray-800 hover:bg-gray-700 px-6 py-3 rounded-lg font-medium transition">
+                <a href="https://github.com/GopiChaitanyaAlamanda" target="_blank"
+                    class="bg-gray-800 hover:bg-gray-700 px-6 py-3 rounded-lg font-medium transition">
                     <i class="fab fa-github mr-2"></i> GitHub
                 </a>
-                <a href="Gopi_Chaitanya_Railway Automation Engineer.pdf" download class="bg-blue-600 hover:bg-blue-700 px-6 py-3 rounded-lg font-medium transition">
+                <a href="Gopi_Chaitanya_Railway Automation Engineer.pdf" download
+                    class="bg-gradient-to-r from-orange-500 to-orange-400 hover:from-orange-400 hover:to-orange-300 active:from-orange-600 active:to-orange-500 text-white font-semibold px-6 py-3 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 transform hover:-translate-y-0.5 px-6 py-3 rounded-lg font-medium transition">
                     <i class="fas fa-download mr-2"></i> Download Resume
                 </a>
             </div>
-            
+
             <div class="text-gray-500 text-sm">
                 📍 Based in Vijayawada | Open to relocation | 3 months notice period
             </div>
@@ -710,7 +780,7 @@
     <!-- Footer -->
     <footer class="py-8 border-t border-gray-800">
         <div class="max-w-7xl mx-auto px-6 text-center text-gray-500 text-sm">
-            © 2026 Gopi Chaitanya Alamanda. Built with Python automation expertise.
+            © 2026 Gopi Chaitanya Alamanda.
         </div>
     </footer>
 
@@ -721,17 +791,17 @@
         const navPhotoContainer = document.getElementById('nav-photo-container');
         const navPhotoContainerImg = navPhotoContainer.querySelector('img');
         const heroPhotoImg = heroPhoto.querySelector('img');
-        
+
         // Sync image sources
         navPhotoContainerImg.src = heroPhotoImg.src;
-        
+
         function handleScroll() {
             const scrollY = window.scrollY;
             const windowHeight = window.innerHeight;
             const heroSection = document.querySelector('section.min-h-screen');
             const heroBottom = heroSection.offsetTop + (heroSection.offsetHeight * 0.7);
-            
-            if (scrollY + (windowHeight * 0.3) > heroBottom) {
+
+            if (scrollY + (windowHeight * 0.01) > heroBottom) {
                 if (navPhotoContainer.classList.contains('hidden')) {
                     navPhotoContainer.classList.remove('hidden');
                     void navPhotoContainer.offsetWidth;
@@ -748,31 +818,31 @@
                 }, 300);
             }
         }
-        
+
         let ticking = false;
-        window.addEventListener('scroll', function() {
+        window.addEventListener('scroll', function () {
             if (!ticking) {
-                window.requestAnimationFrame(function() {
+                window.requestAnimationFrame(function () {
                     handleScroll();
                     ticking = false;
                 });
                 ticking = true;
             }
         }, { passive: true });
-        
+
         handleScroll();
-        
+
         // Mobile Menu Toggle
         const mobileMenuBtn = document.getElementById('mobile-menu-btn');
         const mobileMenu = document.getElementById('mobile-menu');
-        
+
         mobileMenuBtn.addEventListener('click', () => {
             mobileMenu.classList.toggle('hidden');
             const icon = mobileMenuBtn.querySelector('i');
             icon.classList.toggle('fa-bars');
             icon.classList.toggle('fa-times');
         });
-        
+
         document.querySelectorAll('#mobile-menu a').forEach(link => {
             link.addEventListener('click', () => {
                 mobileMenu.classList.add('hidden');
@@ -782,4 +852,5 @@
         });
     </script>
 </body>
+
 </html>
