@@ -84,6 +84,23 @@
             transform: scale(1.05);
             box-shadow: 0 10px 25px rgba(220, 38, 38, 0.4);
         }
+
+        /* IREE / IRSE event photo carousel */
+        .event-gallery { background: radial-gradient(ellipse at 50% 0%, rgba(59,130,246,.10), transparent 60%); }
+        .event-carousel { position: relative; overflow: hidden; border: 1px solid rgba(148,163,184,.18); border-radius: 1.5rem; background: #030712; }
+        .event-slide { display: none; position: relative; min-height: 260px; aspect-ratio: 16 / 9; }
+        .event-slide.active { display: block; animation: eventFade .65s ease; }
+        .event-slide img { width: 100%; height: 100%; min-height: 260px; position: absolute; inset: 0; object-fit: cover; }
+        .event-slide::after { content: ""; position: absolute; inset: 35% 0 0; background: linear-gradient(transparent, rgba(3,7,18,.92)); pointer-events: none; }
+        .event-caption { position: absolute; z-index: 2; left: clamp(1rem, 4vw, 2.5rem); right: clamp(1rem, 4vw, 2.5rem); bottom: clamp(1rem, 4vw, 2rem); }
+        .event-arrow { position: absolute; z-index: 3; top: 50%; transform: translateY(-50%); width: 2.75rem; height: 2.75rem; border: 1px solid rgba(255,255,255,.22); border-radius: 9999px; color: white; background: rgba(3,7,18,.62); backdrop-filter: blur(8px); transition: .2s ease; }
+        .event-arrow:hover { background: rgba(37,99,235,.9); transform: translateY(-50%) scale(1.06); }
+        .event-arrow.prev { left: 1rem; } .event-arrow.next { right: 1rem; }
+        .event-dot { width: .55rem; height: .55rem; border-radius: 9999px; background: #4b5563; transition: .25s ease; }
+        .event-dot.active { width: 1.7rem; background: #60a5fa; }
+        @keyframes eventFade { from { opacity: .45; transform: scale(1.012); } to { opacity: 1; transform: scale(1); } }
+        @media (prefers-reduced-motion: reduce) { .event-slide.active { animation: none; } }
+
     </style>
 </head>
 
@@ -109,6 +126,8 @@
                     <a href="#professional-experience" class="hover:text-blue-400 transition">Experience</a>
                     <a href="#india-map" class="hover:text-blue-400 transition">Projects</a>
                     <a href="#experience" class="hover:text-blue-400 transition">Professional Journey</a>
+                    <a href="#events" class="hover:text-blue-400 transition">Events</a>
+                    <!-- <a href="#events" class="hover:text-blue-400 transition">Events</a> -->
                     <a href="#recognition" class="hover:text-blue-400 transition">Recognition</a>
                     <a href="#contact" class="hover:text-blue-400 transition">Contact</a>
                     <a href="#contact"
@@ -159,7 +178,7 @@
                     </h1>
 
                     <p class="text-lg md:text-xl text-gray-400 mb-8">
-                        2.7+ years delivering mission-critical Python automation for Indian Railways |
+                        3+ years delivering mission-critical Python automation for Indian Railways |
                         1000+ stations | 6+ proprietary tools | Director-recognized
                     </p>
 
@@ -261,6 +280,8 @@
                             <li>• Designed Digital Twin Platforms of Signalling Circuits [Signal,Point,Track & HMUS] to
                                 monitor the Circuit flow.</li>
 
+                            <li>• Worked with multi layer architectured Applications for signalling systems.</li>
+
                             <li>• Understanding of Route Checking, Locking, Releasing & Cancellation</li>
                             <li>• Worked with Route Setting & Non Route Setting Stations and Understand Signalling
                                 principles</li>
@@ -270,6 +291,7 @@
                                 Signalling, IBH</li>
 
                             <li>• Learnt about CBTC, ETCS & ERTMS </li>
+                            <li>• Collaborated with Service Engineers, R&D Team, Testing & Stakeholders to drive project success.</li>
                         </ul>
                     </div>
 
@@ -286,12 +308,14 @@
                             <li>🚉 Supported systems deployed across 1000+ railway stations.</li>
 
                             <li>👨‍💼 Led a team of 7 interns for Nirdesh Alerts implementation.</li>
+                            <li>👨‍💼 Led a team of 5 Employees for Safety Point Alarm Unit implementation.</li>
 
                             <li>📊 Developed 6+ internal automation tools used by engineering teams.</li>
 
                             <li>🎤 Represented Efftronics at IREE and IRSE exhibitions.</li>
 
-                            <li>🚄 Contributed to India's largest railway video wall deployments.</li>
+                            <li>🚄 Contributed to India's largest railway Train Management System deployments.</li>
+                            <li>🎨 Designed Live Train Management System which is inaugurated by Railway Minister.</li>
 
                         </ul>
                     </div>
@@ -598,13 +622,13 @@
             </div>
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
 
-                <!-- Project 4: Video Wall Simulation -->
+                <!-- Project 4: Train Management System Simulation -->
                 <div class="bg-gray-950 border border-gray-800 rounded-2xl p-6 card-hover">
                     <div class="flex items-center mb-4">
                         <div class="w-12 h-12 bg-red-600/20 rounded-lg flex items-center justify-center mr-4">
                             <i class="fas fa-desktop text-red-400 text-xl"></i>
                         </div>
-                        <h3 class="text-xl font-bold">TMS - Train Monitoring System</h3>
+                        <h3 class="text-xl font-bold">TMS - Train Management System</h3>
                     </div>
                     <div class="space-y-3">
                         <div>
@@ -627,7 +651,7 @@
                         <div class="flex flex-wrap gap-2 pt-3">
                             <span class="bg-gray-800 px-3 py-1 rounded-full text-xs">System Integration</span>
                             <span class="bg-gray-800 px-3 py-1 rounded-full text-xs">Real-Time</span>
-                            <span class="bg-gray-800 px-3 py-1 rounded-full text-xs">Video Wall</span>
+                            <span class="bg-gray-800 px-3 py-1 rounded-full text-xs">Train Management System</span>
                         </div>
                         <!-- <div class="flex gap-2 pt-4">
                             <a href="#" target="_blank"
@@ -823,7 +847,7 @@
                     </div>
                     <div class="bg-gray-900 border border-gray-800 rounded-xl p-6">
                         <div class="text-blue-400 text-sm font-semibold mb-2">Jun 2023</div>
-                        <h3 class="text-xl font-bold mb-2">Joined as Trainee (Site CDA Admin)</h3>
+                        <h3 class="text-xl font-bold mb-2">Joined as Trainee (Site CDA System Admin)</h3>
                         <p class="text-gray-400">Started with 3-month training; assigned to site deployment</p>
                     </div>
                 </div>
@@ -847,9 +871,9 @@
                         <span class="text-white font-bold text-sm">3</span>
                     </div>
                     <div class="bg-gray-900 border border-gray-800 rounded-xl p-6">
-                        <div class="text-green-400 text-sm font-semibold mb-2">Sep - Dec 2023</div>
+                        <div class="text-green-400 text-sm font-semibold mb-2">Oct 2023 - 2024</div>
                         <h3 class="text-xl font-bold mb-2">Confirmed as Engineer</h3>
-                        <p class="text-gray-400">Represented company at IREE & IRSE Delhi; led Video Wall for Jhansi</p>
+                        <p class="text-gray-400">Represented company at IREE & IRSE Delhi; led Train Management System for Jhansi & Worked with various Railways Projects</p>
                     </div>
                 </div>
 
@@ -862,8 +886,7 @@
                         <div class="text-yellow-400 text-sm font-semibold mb-2">2024 - 2025</div>
                         <h3 class="text-xl font-bold mb-2">Led Pan-India Projects</h3>
                         <p class="text-gray-400">Nirdesh Alerts (145 stations), SPAU (300 stations), RDPM (10 stations),
-                            Video Walls (500+ Stations), India's Largest Video Wall
-                            (116 stations) inaugurated by Railway Minister</p>
+                            Train Management Systems (600+ Stations), India's Largest Train Management System inaugurated by Railway Minister</p>
                     </div>
                 </div>
 
@@ -874,13 +897,74 @@
                     </div>
                     <div class="bg-gray-900 border border-gray-800 rounded-xl p-6">
                         <div class="text-red-400 text-sm font-semibold mb-2">2026-Present</div>
-                        <h3 class="text-xl font-bold mb-2">Leading TMS Projects</h3>
+                        <h3 class="text-xl font-bold mb-2">Leading & Deploying TMS Projects</h3>
                         <p class="text-gray-400">India's Train Monitoring
                             Systems Leading
                         </p>
                     </div>
                 </div>
             </div>
+        </div>
+    </section>
+
+
+    <!-- IREE & IRSE Event Photo Gallery -->
+    <section id="events" class="event-gallery py-24 bg-gray-950">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="text-center mb-12">
+                <p class="text-sm tracking-[.22em] font-semibold text-blue-400 mb-3">BEYOND THE WORKPLACE</p>
+                <h2 class="text-4xl md:text-5xl font-bold mb-4">Industry Events <span class="gradient-text">& Experiences</span></h2>
+                <p class="text-lg md:text-xl text-gray-400 max-w-3xl mx-auto">
+                    Moments from representing Efftronics at IREE and IRSE exhibitions, engaging with railway technology and industry professionals.
+                </p>
+            </div>
+
+            <div class="event-carousel shadow-2xl shadow-blue-950/30" id="event-carousel" aria-label="IREE and IRSE event photo slideshow">
+                <!-- Replace these image paths with your own event photographs. Keep images in an "images" folder beside this HTML file. -->
+                <article class="event-slide active" data-title="IREE Exhibition" data-detail="Industry exhibition • 2023 - Delhi">
+                    <img src="Imgs/IREE2023-1.jpg" alt="Gopi participating in the IREE exhibition" loading="lazy">
+                    <div class="event-caption">
+                        <span class="inline-flex text-xs font-semibold tracking-wider uppercase text-blue-300 bg-blue-950/70 border border-blue-400/30 rounded-full px-3 py-1 mb-3">IREE</span>
+                        <h3 class="text-2xl md:text-3xl font-bold mb-1">IREE Exhibition</h3>
+                        <p class="text-sm md:text-base text-gray-300">Industry exhibition • 2023 - Delhi</p>
+                    </div>
+                </article>
+                <article class="event-slide" data-title="IRSE Event" data-detail="Professional event • 2023 - Delhi">
+                    <img src="Imgs/IRSE-2023-3.jpg" alt="Gopi participating in the IRSE event" loading="lazy">
+                    <div class="event-caption">
+                        <span class="inline-flex text-xs font-semibold tracking-wider uppercase text-purple-300 bg-purple-950/70 border border-purple-400/30 rounded-full px-3 py-1 mb-3">IRSE</span>
+                        <h3 class="text-2xl md:text-3xl font-bold mb-1">IRSE Event</h3>
+                        <p class="text-sm md:text-base text-gray-300">Professional event • 2023 - Delhi</p>
+                    </div>
+                </article>
+                <article class="event-slide" data-title="Railway Technology & Networking" data-detail="Exhibition highlights • 2023 - Delhi">
+                    <img src="Imgs/IRSE2023-1.jpg" alt="Railway technology exhibition and professional networking" loading="lazy">
+                    <div class="event-caption">
+                        <span class="inline-flex text-xs font-semibold tracking-wider uppercase text-blue-300 bg-blue-950/70 border border-blue-400/30 rounded-full px-3 py-1 mb-3">INDUSTRY EXPOSURE</span>
+                        <h3 class="text-2xl md:text-3xl font-bold mb-1">Railway Technology & Networking</h3>
+                        <p class="text-sm md:text-base text-gray-300">Exhibition highlights • 2023 - Delhi</p>
+                    </div>
+                </article>
+                <button class="event-arrow prev" type="button" aria-label="Previous photo"><i class="fas fa-chevron-left"></i></button>
+                <button class="event-arrow next" type="button" aria-label="Next photo"><i class="fas fa-chevron-right"></i></button>
+            </div>
+
+            <div class="flex flex-col sm:flex-row items-center justify-between gap-4 mt-5">
+                <div class="flex items-center gap-2" id="event-dots" aria-label="Choose a slide">
+                    <button class="event-dot active" type="button" aria-label="Show photo 1"></button>
+                    <button class="event-dot" type="button" aria-label="Show photo 2"></button>
+                    <button class="event-dot" type="button" aria-label="Show photo 3"></button>
+                </div>
+                <div class="flex items-center gap-3 text-sm text-gray-400">
+                    <span id="event-counter" class="tabular-nums">01 / 03</span>
+                    <span class="w-1 h-1 rounded-full bg-gray-600"></span>
+                    <span>Auto-playing slideshow</span>
+                    <button id="event-pause" type="button" class="ml-2 text-gray-300 hover:text-blue-400 transition" aria-label="Pause slideshow">
+                        <i class="fas fa-pause"></i><span class="ml-2">Pause</span>
+                    </button>
+                </div>
+            </div>
+            <!-- <p class="text-center text-xs text-gray-500 mt-6">Replace the sample image filenames with your own IREE and IRSE photographs.</p> -->
         </div>
     </section>
 
@@ -923,31 +1007,26 @@
                 </h2>
             </div>
 
-            <div class="grid md:grid-cols-4 gap-8">
-                <div class="bg-gray-900 border border-gray-800 rounded-2xl p-6">
-                    <h3 class="text-xl font-bold mb-4 text-blue-400">Expert Level</h3>
-                    <div class="flex flex-wrap gap-2">
-                        <span class="bg-blue-900/30 border border-blue-800 px-3 py-2 rounded-lg text-sm">Python</span>
-                        <span class="bg-blue-900/30 border border-blue-800 px-3 py-2 rounded-lg text-sm">Oracle
-                            SQL</span>
-                        <span class="bg-blue-900/30 border border-blue-800 px-3 py-2 rounded-lg text-sm">Excel
-                            Automation</span>
-                        <span class="bg-blue-900/30 border border-blue-800 px-3 py-2 rounded-lg text-sm">JSON
-                            Processing</span>
-                    </div>
-                </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                
 
                 <div class="bg-gray-900 border border-gray-800 rounded-2xl p-6">
-                    <h3 class="text-xl font-bold mb-4 text-purple-400">Advanced</h3>
+                    <h3 class="text-xl font-bold mb-4 text-purple-400">Computer or Programming Skills</h3>
                     <div class="flex flex-wrap gap-2">
                         <span
+                            class="bg-purple-900/30 border border-purple-800 px-3 py-2 rounded-lg text-sm">Python</span>
+                            <span
                             class="bg-purple-900/30 border border-purple-800 px-3 py-2 rounded-lg text-sm">Django</span>
                         <span
                             class="bg-purple-900/30 border border-purple-800 px-3 py-2 rounded-lg text-sm">Flask</span>
-                        <span class="bg-purple-900/30 border border-purple-800 px-3 py-2 rounded-lg text-sm">React
-                            JS</span>
+                            <span class="bg-purple-900/30 border border-purple-800 px-3 py-2 rounded-lg text-sm">Oracle</span>
+                            <span class="bg-purple-900/30 border border-purple-800 px-3 py-2 rounded-lg text-sm">Excel & Adv Excel</span>
+                            <span class="bg-purple-900/30 border border-purple-800 px-3 py-2 rounded-lg text-sm">JSON Processing</span>
+                            <span class="bg-purple-900/30 border border-purple-800 px-3 py-2 rounded-lg text-sm">PostMan</span>
+                            <span class="bg-purple-900/30 border border-purple-800 px-3 py-2 rounded-lg text-sm">AutoCAD basics</span>
+                            <span class="bg-purple-900/30 border border-purple-800 px-3 py-2 rounded-lg text-sm">Automation</span>
                         <span class="bg-purple-900/30 border border-purple-800 px-3 py-2 rounded-lg text-sm">Azure
-                            Cloud</span>
+                            Cloud VM</span>
                         <span class="bg-purple-900/30 border border-purple-800 px-3 py-2 rounded-lg text-sm">Power
                             BI</span>
                     </div>
@@ -958,6 +1037,7 @@
                     <div class="flex flex-wrap gap-2">
                         <span class="bg-green-900/30 border border-green-800 px-3 py-2 rounded-lg text-sm">Railway
                             Signalling</span>
+                            <span class="bg-green-900/30 border border-green-800 px-3 py-2 rounded-lg text-sm">Technical Support</span>
                         <span class="bg-green-900/30 border border-green-800 px-3 py-2 rounded-lg text-sm">Devops</span>
                         <span class="bg-green-900/30 border border-green-800 px-3 py-2 rounded-lg text-sm">Application
                             Architecture</span>
@@ -972,7 +1052,7 @@
                 </div>
 
                 <div class="bg-gray-900 border border-gray-800 rounded-2xl p-6">
-                    <h3 class="text-xl font-bold mb-4 text-orange-400">Railway Domain</h3>
+                    <h3 class="text-xl font-bold mb-4 text-orange-400">Railway Domain Knowledge & Experience</h3>
                     <div class="flex flex-wrap gap-2">
                         <span class="bg-orange-900/30 border border-orange-800 px-3 py-2 rounded-lg text-sm">Railway
                             Signalling</span>
@@ -980,28 +1060,28 @@
                             Locking & Releasing</span>
                         <span class="bg-orange-900/30 border border-orange-800 px-3 py-2 rounded-lg text-sm">Signalling
                             Circuits</span>
-                        <span class="bg-orange-900/30 border border-orange-800 px-3 py-2 rounded-lg text-sm">CENELEC EN
-                            50126</span>
-                        <span
-                            class="bg-orange-900/30 border border-orange-800 px-3 py-2 rounded-lg text-sm">50128</span>
-                        <span
-                            class="bg-orange-900/30 border border-orange-800 px-3 py-2 rounded-lg text-sm">50129</span>
-                        <span class="bg-orange-900/30 border border-orange-800 px-3 py-2 rounded-lg text-sm">ATP</span>
-                        <span class="bg-orange-900/30 border border-orange-800 px-3 py-2 rounded-lg text-sm">ATO</span>
-                        <span class="bg-orange-900/30 border border-orange-800 px-3 py-2 rounded-lg text-sm">ATS</span>
-                        <span class="bg-orange-900/30 border border-orange-800 px-3 py-2 rounded-lg text-sm">CBTC</span>
-                        <span class="bg-orange-900/30 border border-orange-800 px-3 py-2 rounded-lg text-sm">ETCS</span>
-                        <span class="bg-orange-900/30 border border-orange-800 px-3 py-2 rounded-lg text-sm">ERTMS
-                            levels</span>
-                        <span class="bg-orange-900/30 border border-orange-800 px-3 py-2 rounded-lg text-sm">SIL
-                            levels</span>
-                        <span class="bg-orange-900/30 border border-orange-800 px-3 py-2 rounded-lg text-sm">Signalling
-                            principles</span>
-                        <span
-                            class="bg-orange-900/30 border border-orange-800 px-3 py-2 rounded-lg text-sm">Interlocking
-                            systems</span>
-                        <span
-                            class="bg-orange-900/30 border border-orange-800 px-3 py-2 rounded-lg text-sm">Kavach</span>
+                            <span class="bg-orange-900/30 border border-orange-800 px-3 py-2 rounded-lg text-sm">Signalling
+                                principles</span>
+                                <span
+                                class="bg-orange-900/30 border border-orange-800 px-3 py-2 rounded-lg text-sm">Interlocking
+                                systems</span>
+                                <span
+                                class="bg-orange-900/30 border border-orange-800 px-3 py-2 rounded-lg text-sm">Kavach</span>
+                                <span class="bg-orange-900/30 border border-orange-800 px-3 py-2 rounded-lg text-sm">CENELEC EN
+                                    50126</span>
+                                <span
+                                    class="bg-orange-900/30 border border-orange-800 px-3 py-2 rounded-lg text-sm">50128</span>
+                                <span
+                                    class="bg-orange-900/30 border border-orange-800 px-3 py-2 rounded-lg text-sm">50129</span>
+                                <span class="bg-orange-900/30 border border-orange-800 px-3 py-2 rounded-lg text-sm">ATP</span>
+                                <span class="bg-orange-900/30 border border-orange-800 px-3 py-2 rounded-lg text-sm">ATO</span>
+                                <span class="bg-orange-900/30 border border-orange-800 px-3 py-2 rounded-lg text-sm">ATS</span>
+                                <span class="bg-orange-900/30 border border-orange-800 px-3 py-2 rounded-lg text-sm">CBTC</span>
+                                <span class="bg-orange-900/30 border border-orange-800 px-3 py-2 rounded-lg text-sm">ETCS</span>
+                                <span class="bg-orange-900/30 border border-orange-800 px-3 py-2 rounded-lg text-sm">ERTMS
+                                    levels</span>
+                                <span class="bg-orange-900/30 border border-orange-800 px-3 py-2 rounded-lg text-sm">SIL
+                                    levels</span>
                     </div>
                 </div>
             </div>
@@ -1046,7 +1126,7 @@
             </div>
 
             <div class="text-gray-500 text-sm">
-                📍 Based in Vijayawada | Open to relocation | 3 months notice period
+                📍 Based in Vijayawada | Open to relocation in India
             </div>
         </div>
     </section>
@@ -1124,6 +1204,57 @@
                 mobileMenuBtn.querySelector('i').classList.remove('fa-times');
             });
         });
+
+        // IREE & IRSE event photo carousel
+        (() => {
+            const carousel = document.getElementById('event-carousel');
+            if (!carousel) return;
+            const slides = Array.from(carousel.querySelectorAll('.event-slide'));
+            const dots = Array.from(document.querySelectorAll('#event-dots .event-dot'));
+            const counter = document.getElementById('event-counter');
+            const pauseButton = document.getElementById('event-pause');
+            const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+            let current = 0;
+            let timer = null;
+            let paused = reducedMotion;
+
+            function showSlide(index) {
+                current = (index + slides.length) % slides.length;
+                slides.forEach((slide, i) => {
+                    slide.classList.toggle('active', i === current);
+                    slide.setAttribute('aria-hidden', i === current ? 'false' : 'true');
+                });
+                dots.forEach((dot, i) => {
+                    dot.classList.toggle('active', i === current);
+                    dot.setAttribute('aria-current', i === current ? 'true' : 'false');
+                });
+                counter.textContent = `${String(current + 1).padStart(2, '0')} / ${String(slides.length).padStart(2, '0')}`;
+            }
+            function stopTimer() {
+                if (timer) window.clearInterval(timer);
+                timer = null;
+            }
+            function startTimer() {
+                stopTimer();
+                if (!paused) timer = window.setInterval(() => showSlide(current + 1), 4500);
+                pauseButton.innerHTML = paused
+                    ? '<i class="fas fa-play"></i><span class="ml-2">Play</span>'
+                    : '<i class="fas fa-pause"></i><span class="ml-2">Pause</span>';
+                pauseButton.setAttribute('aria-label', paused ? 'Play slideshow' : 'Pause slideshow');
+            }
+            carousel.querySelector('.prev').addEventListener('click', () => { showSlide(current - 1); startTimer(); });
+            carousel.querySelector('.next').addEventListener('click', () => { showSlide(current + 1); startTimer(); });
+            dots.forEach((dot, i) => dot.addEventListener('click', () => { showSlide(i); startTimer(); }));
+            pauseButton.addEventListener('click', () => { paused = !paused; startTimer(); });
+            carousel.addEventListener('mouseenter', stopTimer);
+            carousel.addEventListener('mouseleave', startTimer);
+            carousel.addEventListener('focusin', stopTimer);
+            carousel.addEventListener('focusout', startTimer);
+            document.addEventListener('visibilitychange', () => document.hidden ? stopTimer() : startTimer());
+            showSlide(0);
+            startTimer();
+        })();
+
     </script>
 
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
@@ -1178,7 +1309,7 @@
                     lat: 25.4484,
                     lng: 78.5685,
                     systems: [
-                        "🚆 Train Monitoring System (TMS)",
+                        "🚆 Train Management System (TMS)",
                         "📍 Automatic Train Tracking System (ATTS)",
                         "🔔 Nirdesh Alerts",
                         "👨‍💻 On-Site Support (15 Days)"
@@ -1191,7 +1322,7 @@
                     lat: 28.6139,
                     lng: 77.2090,
                     systems: [
-                        "🚆 Train Monitoring System (TMS)",
+                        "🚆 Train Management System (TMS)",
                         "📍 Automatic Train Tracking System (ATTS)"
                     ]
                 },
@@ -1202,7 +1333,7 @@
                     lat: 26.9124,
                     lng: 75.7873,
                     systems: [
-                        "🚆 Train Monitoring System (TMS)",
+                        "🚆 Train Management System (TMS)",
                         "📍 Automatic Train Tracking System (ATTS)",
                         "⚠️ Safety Point Alarm Unit (SPAU)",
                         "🔔 Nirdesh Alerts"
@@ -1215,7 +1346,7 @@
                     lat: 26.4499,
                     lng: 74.6399,
                     systems: [
-                        "🚆 Train Monitoring System (TMS)",
+                        "🚆 Train Management System (TMS)",
                         "⚠️ Safety Point Alarm Unit (SPAU)"
                     ]
                 },
@@ -1248,7 +1379,7 @@
                     lat: 25.3176,
                     lng: 82.9739,
                     systems: [
-                        "🚆 Train Monitoring System (TMS)"
+                        "🚆 Train Management System (TMS)"
                     ]
                 },
 
@@ -1258,7 +1389,7 @@
                     lat: 22.3460,
                     lng: 87.2320,
                     systems: [
-                        "🚆 Train Monitoring System (TMS)"
+                        "🚆 Train Management System (TMS)"
                     ]
                 },
 
@@ -1268,7 +1399,7 @@
                     lat: 25.8620,
                     lng: 85.7820,
                     systems: [
-                        "🚆 Train Monitoring System (TMS)"
+                        "🚆 Train Management System (TMS)"
                     ]
                 },
 
@@ -1278,7 +1409,7 @@
                     lat: 27.1767,
                     lng: 78.0081,
                     systems: [
-                        "🚆 Train Monitoring System (TMS)"
+                        "🚆 Train Management System (TMS)"
                     ]
                 },
 
@@ -1288,7 +1419,7 @@
                     lat: 15.1711,
                     lng: 77.3778,
                     systems: [
-                        "🚆 Train Monitoring System (TMS)"
+                        "🚆 Train Management System (TMS)"
                     ]
                 },
 
@@ -1298,7 +1429,7 @@
                     lat: 28.8386,
                     lng: 78.7733,
                     systems: [
-                        "🚆 Train Monitoring System (TMS)"
+                        "🚆 Train Management System (TMS)"
                     ]
                 },
 
@@ -1308,7 +1439,7 @@
                     lat: 21.8554,
                     lng: 84.0062,
                     systems: [
-                        "🚆 Train Monitoring System (TMS)"
+                        "🚆 Train Management System (TMS)"
                     ]
                 },
 
